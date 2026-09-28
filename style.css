@@ -10,6 +10,8 @@ a:hover, a:visited {
 }
 
 body {
+  font-family: "Besley", serif;
+  font-weight: 600;
   margin: 0;
   padding: 0;
   font-family: "Times New Roman", Times, serif; 
