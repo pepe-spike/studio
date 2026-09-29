@@ -233,8 +233,8 @@ body.homepage {
 
   /* Aggiunta per modificare la grandezza del testo solo su mobile */
   body {
-      font-size: 17px; /* Modifica questo valore per ingrandire/rimpicciolire il testo */
-      line-height: 20px; /* Modifica questo valore per lo spazio tra le righe */
+      font-size: 17px; 
+      line-height: 20px; 
   }
    
   body.homepage {
@@ -249,7 +249,7 @@ body.homepage {
 
   .header-right {
     text-align: left;
-    margin-top: 20px; /* Spazio tra blocco nomi e blocco orologio/about */
+    margin-top: 20px; 
   }
    
   .gallery-container.fullscreen {
@@ -285,5 +285,12 @@ body.homepage {
    
   .clients > div {
       flex-basis: auto;
+  }
+
+  /* Regola per il rientro a capo forzato dei nomi su mobile (Hanging Indent) */
+  .voce-elenco {
+      padding-left: 20px; 
+      text-indent: -20px; 
+      margin-bottom: 5px; 
   }
 }
