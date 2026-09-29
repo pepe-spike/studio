@@ -230,6 +230,12 @@ body.homepage {
 /* ------------------------------------- */
 
 @media screen and (max-width: 840px) {
+
+  /* Aggiunta per modificare la grandezza del testo solo su mobile */
+  body {
+      font-size: 18px; /* Modifica questo valore per ingrandire/rimpicciolire il testo */
+      line-height: 21px; /* Modifica questo valore per lo spazio tra le righe */
+  }
    
   body.homepage {
       padding-top: 0;
