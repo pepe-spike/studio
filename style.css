@@ -290,7 +290,11 @@ body.homepage {
   /* Regola per il rientro a capo forzato dei nomi su mobile (Hanging Indent) */
   .voce-elenco {
       padding-left: 30px; 
-      text-indent: -60px; 
+      text-indent: -30px; 
       margin-bottom: 5px; 
+  }
+  /* Aggiunge un margine sinistro a tutta la colonna 2 su mobile */
+  .colonna2 {
+      margin-left: 30px; /* Modifica questo valore per aumentare o diminuire lo spazio */
   }
 }
