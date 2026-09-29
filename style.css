@@ -289,8 +289,8 @@ body.homepage {
 
   /* Regola per il rientro a capo forzato dei nomi su mobile (Hanging Indent) */
   .voce-elenco {
-      padding-left: 20px; 
-      text-indent: -20px; 
+      padding-left: 30px; 
+      text-indent: -60px; 
       margin-bottom: 5px; 
   }
 }
