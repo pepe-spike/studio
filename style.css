@@ -1,6 +1,5 @@
 /* ⚙️ REGOLE FONDAMENTALI ORIGINALI */
 
-/* Google Font Besley */
 .besley-<uniquifier> {
   font-family: "Besley", serif;
   font-optical-sizing: auto;
@@ -218,6 +217,17 @@ body.homepage {
     display: none;
 }
 
+/* Gestione spaziatura voci per evitare le doppie interlinee enormi */
+.voce-thanks, .voce-elenco {
+    display: block;
+    margin-bottom: 5px; /* Modifica questo valore per stringere o allargare lo spazio tra i nomi */
+}
+
+/* Il br che su Desktop deve rimanere invisibile */
+.br-mobile {
+    display: none;
+}
+
 /* ------------------------------------- */
 /* 📱 REGOLE MEDIA QUERY (MOBILE) */
 /* ------------------------------------- */
@@ -276,5 +286,10 @@ body.homepage {
    
   .clients > div {
       flex-basis: auto;
+  }
+
+  /* Su mobile accendiamo il <br> speciale per mandare a capo i Luoghi */
+  .br-mobile {
+      display: block;
   }
 }
