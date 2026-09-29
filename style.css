@@ -243,7 +243,7 @@ body.homepage {
 
   .header-right {
     text-align: left;
-    margin-top: 10px; /* Spazio tra blocco nomi e blocco orologio/about */
+    margin-top: 20px; /* Spazio tra blocco nomi e blocco orologio/about */
   }
    
   .gallery-container.fullscreen {
