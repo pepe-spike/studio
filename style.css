@@ -225,6 +225,11 @@ body.homepage {
     display: none;
 }
 
+/* Regole per distanziare i nomi su Desktop */
+.voce-thanks, .voce-elenco {
+    margin-bottom: 4px;
+}
+
 /* ------------------------------------- */
 /* 📱 REGOLE MEDIA QUERY (MOBILE) */
 /* ------------------------------------- */
@@ -286,15 +291,27 @@ body.homepage {
   .clients > div {
       flex-basis: auto;
   }
-
-  /* Regola per il rientro a capo forzato dei nomi su mobile (Hanging Indent) */
+  
+  /* Distanza voci "Education" su Mobile */
   .voce-elenco {
-      padding-left: 30px; 
-      text-indent: -30px; 
-      margin-bottom: 5px; 
+      margin-bottom: 15px; 
   }
-  /* Aggiunge un margine sinistro a tutta la colonna 2 su mobile */
-  .colonna2 {
-      margin-left: 30px; /* Modifica questo valore per aumentare o diminuire lo spazio */
+
+  /* ✨ NUOVA VERSIONE PER LA LISTA THANKS SU MOBILE ✨ */
+  .voce-thanks {
+      display: block; 
+      margin-bottom: 15px; /* Spazio tra un blocco e l'altro */
+  }
+  
+  .voce-thanks .nome,
+  .voce-thanks .ruolo {
+      /* Nome e ruolo restano uniti sulla prima riga */
+      display: inline; 
+  }
+  
+  .voce-thanks .luogo {
+      /* Il luogo va forzatamente a capo sulla seconda riga */
+      display: block; 
+      margin-top: 2px; /* Opzionale: aggiunge un piccolo respiro dalla riga sopra */
   }
 }
