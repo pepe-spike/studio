@@ -217,14 +217,8 @@ body.homepage {
     display: none;
 }
 
-/* Gestione spaziatura voci per evitare le doppie interlinee enormi */
-.voce-thanks, .voce-elenco {
-    display: block;
-    margin-bottom: 5px; /* Modifica questo valore per stringere o allargare lo spazio tra i nomi */
-}
-
-/* Il br che su Desktop deve rimanere invisibile */
-.br-mobile {
+/* Nascondiamo la versione mobile su computer */
+.mobile-only {
     display: none;
 }
 
@@ -288,8 +282,12 @@ body.homepage {
       flex-basis: auto;
   }
 
-  /* Su mobile accendiamo il <br> speciale per mandare a capo i Luoghi */
-  .br-mobile {
-      display: block;
+  /* Su mobile, nascondiamo la colonna desktop e mostriamo quella con gli a capo forzati */
+  .desktop-only {
+      display: none !important;
+  }
+
+  .mobile-only {
+      display: block !important;
   }
 }
